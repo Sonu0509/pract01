@@ -306,3 +306,57 @@ let a = [1,2,3,4,45,5,6];
 // let b = "my name is sonu";
 // let c = b.substr(4,7);
 // console .log(c);d
+
+
+
+
+// // //................................
+const prompt = require("prompt-sync")();  
+
+
+let userip = prompt("Enter the value" + "   " );
+
+let a1 = ["a","b","c","d","e"];
+
+let found = false;
+
+a1.forEach((val)=>{
+      if (userip === val){
+            console.log(userip);
+            found =true;
+
+      }
+      });
+     if(!found){
+            console.log(" not found");
+      }
+
+
+ 
+
+// const prompt = require("prompt-sync")();  // Make sure this is at the top
+
+// const name = prompt("Enter your name: ");
+// console.log("Hello, " + name);
+// ...............................
+
+
+
+// const prompt = require("prompt-sync")();  
+
+// let userip = prompt("Enter the value: ");
+
+// let arr1 = ["a", "b", "c", "d", "e"];
+
+// let found = false;
+
+// arr1.forEach((val) => {
+//     if (userip === val) {
+//         console.log("Found:", userip);
+//         found = true;
+//     }
+// });
+
+// if (!found) {
+//     console.log("Not found");
+// }
