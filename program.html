@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 2.6;
+  background: #f5f5f5;
+  color: #880707;
+}
+
+header {
+  background:rgb(32, 32, 1);
+  color: #fff;
+  padding: 15px 30px;
+}
+
+nav {
+  display: flex;
+
+
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: #cb638d;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top:20px ;
+  border-radius: 50px;
+}
+
+.about, .projects, .contact {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: auto;
+  
+}
+
+
+
+.project-card {
+  background: #158037;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.form1 input,textarea{
+    border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  
+  padding: 20px;
+}
+.red{
+          width: 150px;
+      height: 150px;
+      background-color: rgb(248, 228, 12);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+}
+nav ul button:hover{
+    background-color: blue;
+
+}
+
+.login{
+  background-color: black;
+    border-radius: 20px;
+       background-color: white;
+}
+.toggle ,.fnx {
+    font-size: 20px;
+        display: flex;
+    border-color: blue;
+    border-radius: 150px;
+}
+/* .fnx{
+    font-size: 20px;
+        display: flex;
+    border-color: red;
+    border-radius: 50px;
+} */
+
+.search-box{
+ display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.btn3:hover{
+background-color: black;
+}
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <nav>
+      
+      <div style="display: flex; align-items: center;justify-content: space-around; width: 250px;" >
+        <img  style=" background-color: yellow ; border-radius: 50px;height: 50px;width: 50px;" src="./img/istockphoto-1221208810-612x612.jpg">
+        <h1>My Portfolio</h1>
+      </div>
+      
+      <ul>
+        <li><a href="#about" ><i class="fas fa-info-circle"></i>About</a></li>
+        <li><a href="#projects" ></a><i class="fas fa-home"></i>Home</li>
+        <li><a href="#contact" ><i class="fas fa-phone"></i>Contact</a></li>
+        <span ></span>
+        <!-- <input typr="text"placeholder="search" > -->
+        <!-- <li class="search-icon">
+        <a href="#about"><i class="fas fa-search"></i></a>
+      </li> -->
+
+          <div class="search-group">
+  <input type="text" placeholder="Search...">
+  <button><i class="fas fa-search"></i></button>
+</div> 
+      </ul>
+    </nav> 
+  </header>
+<main  style="background-color: #b4bf9b;">
+  <section class="hero">
+    <h2>Hello, I'm Sonu 👋</h2>
+    <p>I,am Web Developer</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p style="background-color: yellowgreen; color : black;width: 700px;padding:50px; border: 2px solid;border-radius: 20px;" > <span style='font-size: 30px;'>H</span>ello! sir My name is xyz .i am a ui,ux designer.i am working for xyz company and experience in HTML, CSS, JavaScript, and React. I enjoy creating responsive, user-friendly websites.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+   <p>Project 1</p>
+    <p>Project 2</p>
+     <p>Project 3</p>
+    </div>
+    <br>
+    <select class ="toggle">
+        <option>project 1</option>
+        <option>project 2</option>
+        <option>poject3</option>
+    </select>
+    <br>
+    <p id="user">HELLO!</p>
+    <button  class ="fnx" onclick="sonu()">click me</button>
+    <br>
+     <div class="search-group">
+      <input type="text" placeholder=" Search...">
+      <button class="btn3" style="background-color:   yellow; " type="submit"><i class="fas fa-search" ;S></i></button>
+       
+      
+
+    
+    </div>
+    
+    
+   
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form >
+      <input  class= "login"  type="text" id="name"  placeholder="Your Name" required>
+      <input  class= "login"  type="email" id="email" placeholder="Your Email" required>
+      <textarea  class= "login"  id="message" placeholder="Your Message" required></textarea>
+      <button  class= "login"  type="submit">Send</button>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sonu Katiyar</p>
+  </footer>
+<script src="script.js"></script>
+<!-- <script src="./style.css"></script> -->
+</body>
+</html>
+
