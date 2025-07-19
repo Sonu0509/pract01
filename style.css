@@ -1,0 +1,27 @@
+.search-group {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.search-group input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-group button {
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+.search-group button:hover {
+  background-color: #0056b3;
+}
