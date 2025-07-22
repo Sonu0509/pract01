@@ -11,6 +11,39 @@
 // }
   
 
- function sonu (){
- document.getElementById("user").innerHTML="hello! ji"
-}
+//  function sonu (){
+//  document.getElementById("user").innerHTML="hello! ji"
+// }
+
+// find the value from Array
+
+let arr =["A","b","c","D"];
+let user1 = document.getElementById("user1");
+let newBtn = document.getElementById("newBtn");
+let checkFnx = () => {
+
+let user2 = user1.value.toLowerCase();
+let found = arr.find((val) => {
+     return  val.toLowerCase() === user2
+       
+
+}) ;
+ 
+       if (found) {
+        console.log(found.toLowerCase());
+       }else{
+        console.log("invalid details");
+       }
+    };
+
+
+
+
+       
+
+
+
+newBtn.addEventListener("click",()=>{
+    checkFnx();
+})
+

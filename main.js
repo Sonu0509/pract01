@@ -1,12 +1,12 @@
 const numbers = [1, 2, 3];
 
-  numbers.map((num) => {
-    let c = num*2;
+let d = numbers.map((num) => {
+    return num*2;
 
-     console.log(c);
+    
 });
 
-   
+    console.log(d);
 
 
 // Output: 2, 4, 6 (prints only)
