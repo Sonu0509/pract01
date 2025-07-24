@@ -20,6 +20,7 @@
 let arr =["A","b","c","D"];
 let user1 = document.getElementById("user1");
 let newBtn = document.getElementById("newBtn");
+
 let checkFnx = () => {
 
 let user2 = user1.value.toLowerCase();
