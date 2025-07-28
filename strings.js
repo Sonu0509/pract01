@@ -1,10 +1,10 @@
-let str ="my name is sonu";
+let str ="my name is sonu katiyar";
 
 
 
 const checkVowels=(ab)=>{
 
-    let vle= "aeiou" ;
+    let vle= "aeiouyz" ;
 for (let a of vle ){
 
     if(!(ab.includes(a))){

@@ -1,19 +1,19 @@
-// let arr = ["a","S","d","FR"];
-// let b = arr.toString().toUpperCase();
-// console.log(b);
+let arr = ["a","S","d","FR"];
+let b = arr.toString().toUpperCase();
+console.log(b);
 
 
-// let arr =["A","b","c","D"];
-// let user2 = arr.toString().toLowerCase();
-// console.log(user2);
+let arr1 =["A","b","c","D"];
+let user2 = arr1.toString().toLowerCase();
+console.log(user2);
 
 
 
-// let arr = ["Apple", "Banana", "Mango"];
-// let input = "banana";
+let arr3 = ["Apple", "Banana", "Mango","apple"];
+let input = "apple";
 
-// let found = arr.find(item => item.toLowerCase() === input.toLowerCase());
-// console.log(found); // "Banana"
+let found = arr3.filter(item => item.toLowerCase() === input.toLowerCase());
+console.log(found); 
 
 
 // let arr = ["apple", "banana", "mango"];
@@ -35,6 +35,12 @@
 //     })
 
 //   console.log(a);
+
+
+
+
+//...................filter................//
+
 
 
 
@@ -62,7 +68,7 @@
 
 
 
- let arr = [11, 21, 13, 14, 15, 16, 17, 18, 14];
+
 
 //  let a = arr.find((elm)=>{
 //    return elm>=13
@@ -77,10 +83,32 @@
 // });
 // console.log(a)
 
-let c = arr.filter((elm,index)=>{
- return   arr.findIndex((ab)=>{
-   return  ab===elm
-}) === index;
+// let arr = [11, 21, 13, 14, 15, 16, 17, 18, 14];
+// let c = arr.filter((elm,index)=>{
+//     return   arr.findIndex((ab)=>{
+//         return  ab===elm
+//     }) === index;
+    
+// });
+// console.log(c);
 
-});
-console.log(c);
+
+//  let arr = [11, 21, 13, 14, 15, 16, 17, 18, 14];
+
+
+// let a = arr.filter((elm,index,arr)=>{
+//         return  arr.indexOf(elm)===index
+//     });
+//     console.log(a);
+    
+    
+
+ //......................................................
+
+
+
+
+// let arr = ["aman","suman","karan","rajan","sumit"];
+
+
+

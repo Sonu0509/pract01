@@ -51,11 +51,11 @@ let user1 = document.getElementById("user1");
 let newBtn = document.getElementById("newBtn");
 
 let checkFnx = () => {
-    let input = user1.value.toLowerCase(); // get user input
-    let found = arr.find((val) => val.toLowerCase() === input); // search match
+    let input = user1.value.toLowerCase(); 
+    let found = arr.find((val) => val.toLowerCase() === input); 
 
     if (found) {
-        console.log("Match found:", found);
+        console.log("Match found:", found.toLowerCase());
     } else {
         console.log("No match found");
     }
