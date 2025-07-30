@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        background-color: rgb(3, 3, 44);
+        color: white;
+       }
+       nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 90);
+       }
+       nav ul{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        
+       }
+       nav ul li{
+        list-style: none;
+        margin: 0 23px;
+        
+       }
+           nav ul li a {
+        text-decoration: none;
+        color: white;
+
+        
+       }
+        nav ul li a:hover{
+            color: rgb(160, 160, 212);
+            font-size: 1.01rem;
+        }
+
+       .left{
+        font-size: 1.5rem;
+       }
+       .fristSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3ch 0;
+         
+       }
+        .fristSection > div{
+            width: 30%;
+        }
+        .leftSection{
+            /* background-color: brown; */
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+         .rightSection img{
+            /* background-color: brown; */
+            width: 80%;
+           
+           
+        }
+        .color{
+            color: blueviolet;
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+              color: blueviolet;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+        .secondSection{
+            font-size: 1.2rem;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            background-color: white;
+            width: 1px;
+            margin:0 100px;
+        }
+        main hr{
+           border: 0px; height: 1px;
+           background-color:blueviolet;
+           margin: 40px 84px;
+        }
+        .secondSection .box{
+            background-color: white;
+            height: 2px;
+            margin: 56px 0;
+            width: 80vw;
+            display: flex;
+        }
+        footer{
+            background-color: rgb(18, 18, 92);
+            height: 120px;
+        }
+        .footer{
+            display: flex;
+            padding: 25px 122px;
+            justify-content: space-evenly;
+
+        }
+        .footer ul li a{
+            
+             text-decoration: none;
+              color: white;
+        }
+        
+    </style>
+</head>
+<body>
+  <header>
+        <nav>
+            <div class="left">Sonu Katiyar</div>
+            <div class="right">
+                <ul>
+                 
+                    <li><a href="/">Home</a></li>
+                     <li><a href="/">About</a></li>
+                     <li><a href="/">Project</a></li>
+                      <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="fristSection"> 
+            <div class="leftSection">
+                Hi My Name is<span class="color"> Sonu -katiyar</span> 
+                <!-- <div>And .I am a passionate</div> -->
+                <!-- <div>WebDevloper</div> -->
+                <span id="element"></span>
+            </div>
+            
+            <div class="rightSection"><img src="./img/phone.png" ></div>
+        </section>
+        <hr >
+        <section class="secondSection">
+            <span class="text-gray">What i have done so for</span>
+             <h1>Work Experience</h1>
+             <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="frist">
+            <h2>sonu katiyar</h2>
+        </div>
+             <div class="second">
+                <ul>
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/">About</a></li>
+                     <li><a href="/">Project</a></li>
+                      <li><a href="/">Contact</a></li>
+                </ul>
+             </div>
+                  <div class="third"></div>
+                       <div class="fourth"></div>
+                       </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['And,i am a passionate','Web Devloper','HTML','CSS','JavaScript','React'],
+      typeSpeed: 100,
+    });
+  </script>
+
+    
+</body>
+</html>
